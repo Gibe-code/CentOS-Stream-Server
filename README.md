@@ -127,4 +127,7 @@ o	On the right side, click the **CD icon** next to “Optical Drive”, then cho
 6.	With the VM selected, click **"Start"** (green arrow) to boot from the ISO.  
  
 **🔄 The virtual machine will now boot into the CentOS Stream installation screen.**  
+![image](https://github.com/user-attachments/assets/08c7e610-a2f2-49f9-b413-d5f951a159d6)
+![image](https://github.com/user-attachments/assets/1326f913-f6ba-48c5-8084-5cb3b1610eaa)
+
 # Systemcall Implementation  
