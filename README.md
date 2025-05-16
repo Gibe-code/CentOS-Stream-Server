@@ -1,4 +1,8 @@
-# CentOS-Stream-Server
+# CentOS-Stream-Server  
+
+![image](https://github.com/user-attachments/assets/f027c157-c2f9-4b05-8c2d-3969aa326341)
+
+
 
 # Main Documentation
 
