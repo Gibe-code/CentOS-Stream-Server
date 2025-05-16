@@ -316,15 +316,20 @@ To avoid manual errors, the automatic partitioning option was selected during in
 By default, CentOS Stream Server uses the ext4 (Fourth Extended Filesystem) as its primary filesystem during installation. It is selected for its balance between stability, performance, and compatibility. Ext4 supports large volumes and files, journaling, and backward compatibility with ext3/ext2.  
 **•	Default:** ext4  
 **•	Why ext4:** It is mature, well-supported, has good performance, and is reliable for server environments.  
+
 **Other Supported Filesystems**  
-CentOS Stream also supports several other filesystems that can be configured manually or during advanced installations:  
+
+CentOS Stream also supports several other filesystems that can be configured manually or during advanced installations: 
+
 **•	XFS:**  
 o	Default for many RHEL/CentOS setups on enterprise-grade systems.  
 o	High performance and excellent for handling large files and parallel I/O.  
 o	Chosen in many server environments.  
+
 **•	Btrfs** (via external repo or manual install):  
 o	Modern filesystem with snapshot and subvolume support, but not officially supported by RHEL-based production environments.  
 o	Suitable for experimentation.  
+
 **•	vfat/FAT32:**  
 o	Used for EFI boot partitions.  
 o	Provides cross-platform compatibility.  
@@ -345,44 +350,57 @@ o	Advanced features like data integrity verification and built-in RAID.
 For most CentOS Stream Server installations, XFS is typically the default and preferred option in enterprise environments due to its scalability and performance, although ext4 remains a solid choice for general use, especially in virtualized environments.  
  
  
-Advantages and Disadvantages
-Advantages of CentOS Stream Server
-1.	Rolling-Release Model (Stable Yet Upstream)
-o	CentOS Stream offers a unique position between Fedora (bleeding edge) and RHEL (fully stable), giving users early access to upcoming enterprise features.
-2.	RHEL Compatibility
+## Advantages and Disadvantages  
+
+**Advantages of CentOS Stream Server**
+
+**1.	Rolling-Release Model (Stable Yet Upstream)**  
+o	CentOS Stream offers a unique position between Fedora (bleeding edge) and RHEL (fully stable), giving users early access to upcoming enterprise features.  
+
+**2.	RHEL Compatibility**  
 o	Provides a close preview of future RHEL releases, making it ideal for developers and system administrators who want to stay ahead in the Red Hat ecosystem.
-3.	Enterprise-Ready Environment
-o	Built on the foundations of RHEL, CentOS Stream inherits a strong, stable codebase suitable for server and cloud workloads.
-4.	Strong Community and Documentation
+
+**3.	Enterprise-Ready Environment**  
+o	Built on the foundations of RHEL, CentOS Stream inherits a strong, stable codebase suitable for server and cloud workloads.  
+
+**4.	Strong Community and Documentation**  
 o	Supported by Red Hat and a large open-source community with extensive guides, forums, and documentation.
-5.	Free and Open Source
+
+**5.	Free and Open Source**  
 o	No licensing fees, making it ideal for education, testing, and production environments without the cost burden.
-6.	SELinux and Security Features
+
+**6.	SELinux and Security Features**
 o	Comes with Security-Enhanced Linux (SELinux) by default, adding robust access control and security.
-Disadvantages of CentOS Stream Server
-1.	Not a Traditional Stable Release
+
+**Disadvantages of CentOS Stream Server**
+
+**1.	Not a Traditional Stable Release**  
 o	Unlike classic CentOS, Stream receives frequent updates, which may introduce instability for users expecting a long-term, unchanging environment.
-2.	Limited Support for Desktop Use
+
+**2.	Limited Support for Desktop Use**  
 o	CentOS Stream is server-oriented; it lacks user-friendly features out of the box for desktop users (e.g., multimedia codecs, GUI tools).
-3.	Fewer Third-Party Repositories
+
+**3.	Fewer Third-Party Repositories**  
 o	Compared to Ubuntu or Debian-based systems, CentOS has fewer easy-to-install third-party apps or PPAs.
-4.	Learning Curve
+
+**4.	Learning Curve**  
 o	Manual configurations, SELinux, and package management via dnf can be challenging for beginners.
-5.	Guest Additions and Driver Issues in Virtual Environments
+
+**5.	Guest Additions and Driver Issues in Virtual Environments**  
 o	Installing tools like VirtualBox Guest Additions can require manual intervention and additional packages.
  
  
-Conclusion
-Throughout this project, I have gained substantial insight into CentOS Stream Server and its pivotal role in the Red Hat Enterprise Linux (RHEL) ecosystem. CentOS Stream serves as a rolling-release distribution that sits just ahead of RHEL, making it a valuable platform for developers and administrators who want to preview and contribute to future RHEL versions.
+## Conclusion
+Throughout this project, I have gained substantial insight into **CentOS Stream Server** and its pivotal role in the Red Hat Enterprise Linux (RHEL) ecosystem. CentOS Stream serves as a rolling-release distribution that sits just ahead of RHEL, making it a valuable platform for developers and administrators who want to preview and contribute to future RHEL versions.  
 The installation process in a virtual environment, specifically within VMware Workstation, was smooth and well-documented. Minor compatibility issues, such as screen resolution and network bridging, were resolved with straightforward configuration adjustments and the installation of VMware Tools.
-CentOS Stream's design emphasizes stability and controlled innovation, offering a balance between cutting-edge features and enterprise-grade reliability. This unique positioning makes it particularly appealing for system administrators and developers seeking a testbed for pre-RHEL changes.
-The use of ext4 as the default filesystem underscores CentOS Stream’s commitment to reliability and maturity, providing excellent performance and compatibility across a wide range of hardware and software environments. The support for additional filesystems like XFS and Btrfs adds flexibility for various enterprise needs.
-CentOS Stream’s tight integration with tools like dnf, SELinux, and systemd, along with its support for container platforms such as Podman and Docker, reinforces its role as a modern server operating system. It is well-suited for development, testing, and even production use in certain cases, particularly when long-term foresight into RHEL is needed.
+CentOS Stream's design emphasizes **stability and controlled innovation**, offering a balance between cutting-edge features and enterprise-grade reliability. This unique positioning makes it particularly appealing for system administrators and developers seeking a testbed for pre-RHEL changes.
+The use of **ext4** as the default filesystem underscores CentOS Stream’s commitment to reliability and maturity, providing excellent performance and compatibility across a wide range of hardware and software environments. The support for additional filesystems like XFS and Btrfs adds flexibility for various enterprise needs.
+CentOS Stream’s tight integration with tools like dnf, SELinux, and systemd, along with its support for container platforms such as Podman and Docker, reinforces its role as a modern server operating system. It is well-suited for development, testing, and even production use in certain cases, particularly when long-term foresight into RHEL is needed.  
 The implementation of system calls within CentOS Stream demonstrated its robust Linux foundation. The successful use of system-level programming, including manipulation of processes via system calls like setpgid, confirmed the system’s suitability for both user-level and low-level kernel interactions.
-In conclusion, CentOS Stream Server stands out as a strategic and practical choice for developers and administrators seeking to work closely with the evolution of enterprise Linux. It combines forward-looking development with a solid foundation, making it an excellent platform for both experimentation and structured learning in modern server environments.
+In conclusion, **CentOS Stream Server** stands out as a strategic and practical choice for developers and administrators seeking to work closely with the evolution of enterprise Linux. It combines forward-looking development with a solid foundation, making it an excellent platform for both experimentation and structured learning in modern server environments.
  
  
-Future Outlook and Recommendations
+## Future Outlook and Recommendations
 Future Outlook
 CentOS Stream is set to play an increasingly important role in the Linux ecosystem, particularly within enterprise and development environments. As Red Hat transitions away from traditional CentOS Linux to CentOS Stream, the distribution is positioned as the upstream source for future RHEL releases, providing a more transparent and collaborative development process.
 The continued evolution of CentOS Stream will likely bring more frequent updates, improved tooling, and broader hardware support. With its integration into CI/CD pipelines and containerized environments, CentOS Stream is expected to gain further adoption among DevOps teams and developers who need to anticipate changes in enterprise environments.
