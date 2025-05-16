@@ -311,38 +311,38 @@ To avoid manual errors, the automatic partitioning option was selected during in
    
    
  
-## Filesystem Support
-**CentOS Stream Server Filesystem**
-By default, CentOS Stream Server uses the ext4 (Fourth Extended Filesystem) as its primary filesystem during installation. It is selected for its balance between stability, performance, and compatibility. Ext4 supports large volumes and files, journaling, and backward compatibility with ext3/ext2.
-**•	Default:** ext4
-**•	Why ext4:** It is mature, well-supported, has good performance, and is reliable for server environments.
-**Other Supported Filesystems**
-CentOS Stream also supports several other filesystems that can be configured manually or during advanced installations:
-**•	XFS:**
-o	Default for many RHEL/CentOS setups on enterprise-grade systems.
-o	High performance and excellent for handling large files and parallel I/O.
-o	Chosen in many server environments.
-**•	Btrfs** (via external repo or manual install):
-o	Modern filesystem with snapshot and subvolume support, but not officially supported by RHEL-based production environments.
-o	Suitable for experimentation.
-**•	vfat/FAT32:**
-o	Used for EFI boot partitions.
-o	Provides cross-platform compatibility.
+## Filesystem
+**CentOS Stream Server Filesystem**  
+By default, CentOS Stream Server uses the ext4 (Fourth Extended Filesystem) as its primary filesystem during installation. It is selected for its balance between stability, performance, and compatibility. Ext4 supports large volumes and files, journaling, and backward compatibility with ext3/ext2.  
+**•	Default:** ext4  
+**•	Why ext4:** It is mature, well-supported, has good performance, and is reliable for server environments.  
+**Other Supported Filesystems**  
+CentOS Stream also supports several other filesystems that can be configured manually or during advanced installations:  
+**•	XFS:**  
+o	Default for many RHEL/CentOS setups on enterprise-grade systems.  
+o	High performance and excellent for handling large files and parallel I/O.  
+o	Chosen in many server environments.  
+**•	Btrfs** (via external repo or manual install):  
+o	Modern filesystem with snapshot and subvolume support, but not officially supported by RHEL-based production environments.  
+o	Suitable for experimentation.  
+**•	vfat/FAT32:**  
+o	Used for EFI boot partitions.  
+o	Provides cross-platform compatibility.  
 
-**•	NTFS (via ntfs-3g):**
-o	Read/write support available through additional packages.
-o	Used mostly for interoperability with Windows-formatted drives.
+**•	NTFS (via ntfs-3g):**  
+o	Read/write support available through additional packages.  
+o	Used mostly for interoperability with Windows-formatted drives.  
 
-**•	exFAT:**
-o	Supported via external packages.
-o	Useful for USB drives, but not recommended for system partitions.
+**•	exFAT:**  
+o	Supported via external packages.  
+o	Useful for USB drives, but not recommended for system partitions.  
 
-**•	ZFS:**
-o	Can be installed manually but not officially supported by CentOS/RHEL.
-o	Advanced features like data integrity verification and built-in RAID.
+**•	ZFS:**  
+o	Can be installed manually but not officially supported by CentOS/RHEL.  
+o	Advanced features like data integrity verification and built-in RAID.  
 
-**Conclusion on Filesystem Usage**
-For most CentOS Stream Server installations, XFS is typically the default and preferred option in enterprise environments due to its scalability and performance, although ext4 remains a solid choice for general use, especially in virtualized environments.
+**Conclusion on Filesystem Usage**  
+For most CentOS Stream Server installations, XFS is typically the default and preferred option in enterprise environments due to its scalability and performance, although ext4 remains a solid choice for general use, especially in virtualized environments.  
  
  
 Advantages and Disadvantages
