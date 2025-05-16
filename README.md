@@ -36,13 +36,13 @@ CentOS Stream offers a unique opportunity to observe and interact with the devel
 •	To understand the concept of virtualization and how it is applied in modern operating systems using tools like VirtualBox  
 •	To gain insights into Linux standardization and how CentOS Stream aligns with enterprise and community-driven development models  
 ## Requirements
-**Hardware Requirements**
+**Hardware Requirements**  
 •	Processor: 2 GHz dual-core processor or better  
 •	RAM: Minimum 2 GB (4 GB or more recommended for optimal performance)  
 •	Storage: At least 20 GB of free disk space  
 •	Graphics: Any GPU capable of supporting standard virtual machine display  
 •	Host System: Windows 10/11, macOS, or Linux with sufficient resources to run virtualization software  
-Software Requirements  
+**Software Requirements**  
 •	Virtualization Software: Oracle VM VirtualBox (version 6.1 or later) or VMware Workstation (version 17 or later)  
 •	Operating System ISO: CentOS Stream Server ISO (latest stable release from the official CentOS website)  
 •	Internet Connection: Required for downloading the ISO and installing updates  
