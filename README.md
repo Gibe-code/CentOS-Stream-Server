@@ -12,7 +12,7 @@
 [Filesystem](#filesystem)  
 [Advantages and Disadvantages](#advantages-and-disadvantages)  
 [Conclusion](#conclusion)  
-[Future Outlook](#future-outlook)  
+[Future Outlook and Recommendations](#future-outlook-and-Recommendations)
 [Virtualization](#virtualization)  
 ## Introduction  
 **Background**  
@@ -401,11 +401,12 @@ In conclusion, **CentOS Stream Server** stands out as a strategic and practical 
  
  
 ## Future Outlook and Recommendations
-Future Outlook
-CentOS Stream is set to play an increasingly important role in the Linux ecosystem, particularly within enterprise and development environments. As Red Hat transitions away from traditional CentOS Linux to CentOS Stream, the distribution is positioned as the upstream source for future RHEL releases, providing a more transparent and collaborative development process.
+**Future Outlook**  
+CentOS Stream is set to play an increasingly important role in the Linux ecosystem, particularly within enterprise and development environments. As Red Hat transitions away from traditional CentOS Linux to CentOS Stream, the distribution is positioned as the **upstream source for future RHEL releases**, providing a more transparent and collaborative development process.
 The continued evolution of CentOS Stream will likely bring more frequent updates, improved tooling, and broader hardware support. With its integration into CI/CD pipelines and containerized environments, CentOS Stream is expected to gain further adoption among DevOps teams and developers who need to anticipate changes in enterprise environments.
-In the future, tighter integration with cloud platforms and better support for edge computing and hybrid deployments may further expand CentOS Stream’s relevance. Its role as a bridge between Fedora’s innovation and RHEL’s stability ensures it will remain an important distribution for those involved in shaping the future of enterprise Linux.
-Recommendations
+In the future, tighter integration with cloud platforms and better support for edge computing and hybrid deployments may further expand CentOS Stream’s relevance. Its role as a **bridge between Fedora’s innovation and RHEL’s stability** ensures it will remain an important distribution for those involved in shaping the future of enterprise Linux.  
+
+**Recommendations**
 1.	For New Users: Invest time in understanding the lifecycle differences between CentOS Stream and traditional distributions. Regular updates and minor version changes are part of the model, so adaptability is essential.
 2.	For System Administrators: Consider using CentOS Stream in development and staging environments to mirror the upcoming state of RHEL. This approach can help in anticipating compatibility issues and ensuring smoother transitions in production.
 3.	For Educators and Students: Leverage CentOS Stream for hands-on learning about enterprise Linux, system administration, and service configuration. Its upstream nature makes it ideal for teaching real-world skills aligned with RHEL systems.
