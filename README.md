@@ -111,5 +111,20 @@ o	Set size to at least 20 GB.
 
 ![image](https://github.com/user-attachments/assets/fd23fb76-085d-42c5-9348-6ac267f5780b)
 
-
+## ✅ Step 3: Mount the CentOS Stream ISO and Start the VM  
+**Objective:**  
+Attach the CentOS Stream Server ISO file to the virtual machine and begin the installation process.  
+**Instructions:**  
+**1.	Select your new virtual machine** (e.g., CentOS Stream Server) in VirtualBox.  
+2.	Click **"Settings"** on the top toolbar.  
+3.	Go to the **"Storage"** tab in the left sidebar.  
+4.	Under **"Storage Devices":**  
+o	Click on **"Empty"** under the **Controller: IDE** section.  
+o	On the right side, click the **CD icon** next to “Optical Drive”, then choose:  
+**•	“Choose a disk file...”**  
+•	Browse to and select the **CentOS Stream ISO** file you downloaded in Step 1.  
+5.	Click **OK** to close the Settings window.  
+6.	With the VM selected, click **"Start"** (green arrow) to boot from the ISO.  
+ 
+**🔄 The virtual machine will now boot into the CentOS Stream installation screen.**  
 # Systemcall Implementation  
