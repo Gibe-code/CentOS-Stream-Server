@@ -102,9 +102,14 @@ o	Set size to at least 20 GB.
 **✅ Click Create.**  
  
  
-**the virtual machine is now created**
+**the virtual machine is now created**  
+
+![image](https://github.com/user-attachments/assets/d5f4b771-1d0c-4175-8d18-5ce309ab8d90)  
+
+![image](https://github.com/user-attachments/assets/c5922500-b496-4141-8ca4-bca206a6f2d9)
 
 
+![image](https://github.com/user-attachments/assets/fd23fb76-085d-42c5-9348-6ac267f5780b)
 
 
 # Systemcall Implementation  
