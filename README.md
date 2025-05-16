@@ -254,7 +254,7 @@ reboot**
  
  
  
-## ❗ Issues
+## Issues
 
 ### 🔧 Problems Faced During Installation
 
