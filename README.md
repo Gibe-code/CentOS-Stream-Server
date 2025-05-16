@@ -26,15 +26,15 @@ My motivation for exploring CentOS Stream Server comes from its critical role in
 CentOS Stream offers a unique opportunity to observe and interact with the development process of RHEL, providing insight into how features are integrated, tested, and stabilized. This makes it an excellent platform for learning about modern Linux server management, system updates, and deployment pipelines in a real-world context. Through this documentation, I hope to deepen my knowledge of enterprise-grade operating systems and better appreciate the workflow behind reliable Linux distributions.
  
 ## Objectives
-•	To successfully install CentOS Stream Server in a virtual environment using Oracle VM VirtualBox
-•	To document the installation process thoroughly with detailed step-by-step instructions and relevant screenshots
-•	To explore and understand the key features of CentOS Stream Server, especially its rolling-release model and integration within the RHEL ecosystem
-•	To analyze the filesystem structure and supported filesystems in CentOS Stream Server
-•	To identify and address any challenges encountered during the installation or usage of CentOS Stream Server
-•	To implement and understand system calls (specifically kill() in the CentOS Stream Server environment)
-•	To evaluate the advantages and disadvantages of using CentOS Stream Server compared to other Linux-based operating systems
-•	To understand the concept of virtualization and how it is applied in modern operating systems using tools like VirtualBox
-•	To gain insights into Linux standardization and how CentOS Stream aligns with enterprise and community-driven development models
+•	To successfully install CentOS Stream Server in a virtual environment using Oracle VM VirtualBox  
+•	To document the installation process thoroughly with detailed step-by-step instructions and relevant screenshots  
+•	To explore and understand the key features of CentOS Stream Server, especially its rolling-release model and integration within the RHEL ecosystem  
+•	To analyze the filesystem structure and supported filesystems in CentOS Stream Server  
+•	To identify and address any challenges encountered during the installation or usage of CentOS Stream Server  
+•	To implement and understand system calls (specifically kill() in the CentOS Stream Server environment)  
+•	To evaluate the advantages and disadvantages of using CentOS Stream Server compared to other Linux-based operating systems  
+•	To understand the concept of virtualization and how it is applied in modern operating systems using tools like VirtualBox  
+•	To gain insights into Linux standardization and how CentOS Stream aligns with enterprise and community-driven development models  
  
  
 
