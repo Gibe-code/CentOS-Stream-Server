@@ -130,4 +130,20 @@ o	On the right side, click the **CD icon** next to “Optical Drive”, then cho
 ![image](https://github.com/user-attachments/assets/08c7e610-a2f2-49f9-b413-d5f951a159d6)
 ![image](https://github.com/user-attachments/assets/1326f913-f6ba-48c5-8084-5cb3b1610eaa)
 
+**✅ Step 4: Begin the OS Installation**  
+**Objective:**  
+Start the CentOS Stream installation from the boot menu and proceed to the graphical installer.  
+**Instructions:** 
+1.	After booting from the ISO, you will see the CentOS Stream boot menu.  
+2.	Use the arrow keys to highlight:  
+o	Install CentOS Stream 9 (or similar depending on the version)  
+3.	Press Enter to begin the installation.  
+4.	Wait a few moments for the CentOS graphical installer to load.  
+5.	Once it loads, you will see a Welcome to CentOS Stream screen:  
+o	Choose your language (e.g., English)  
+o	Click Continue
+
+ 
+✅ I'm now inside the CentOS Stream installation summary window.
+
 # Systemcall Implementation  
