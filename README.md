@@ -254,18 +254,25 @@ reboot**
  
  
  
-Issues
-Problems Faced During Installation
-1.	Virtual Machine Display Resolution
-After installation, the CentOS Stream Server VM was stuck at a low resolution (1024x768) and did not resize automatically with the VirtualBox window. Full-screen mode also did not scale properly.
-2.	Guest Additions Installation Failure
-Initial attempts to install VirtualBox Guest Additions failed due to missing kernel headers and development tools (kernel-devel, gcc, etc.), which are required for compiling kernel modules.
-3.	Network Configuration Issues
-Although the network adapter appeared as connected in VirtualBox, the VM had no internet access due to incorrect network adapter settings (NAT vs Bridged Mode mismatch).
-4.	Software Package Download Errors
-During installation or update attempts, some packages failed to download due to mirror selection issues or DNS resolution failures, which interrupted the installation process.
-5.	Partitioning Confusion
-During the manual partitioning step, some options (like setting up a custom LVM or separate /home) were not intuitive for beginners and could easily lead to partitioning errors.
+## ❗ Issues
+
+### 🔧 Problems Faced During Installation
+
+1. **Virtual Machine Display Resolution**  
+   After installation, the CentOS Stream Server VM was stuck at a low resolution (1024x768) and did not resize automatically with the VirtualBox window. Full-screen mode also did not scale properly.
+
+2. **Guest Additions Installation Failure**  
+   Initial attempts to install VirtualBox Guest Additions failed due to missing kernel headers and development tools (`kernel-devel`, `gcc`, etc.), which are required for compiling kernel modules.
+
+3. **Network Configuration Issues**  
+   Although the network adapter appeared as connected in VirtualBox, the VM had no internet access due to incorrect network adapter settings (NAT vs. Bridged Mode mismatch).
+
+4. **Software Package Download Errors**  
+   During installation or update attempts, some packages failed to download due to mirror selection issues or DNS resolution failures, which interrupted the installation process.
+
+5. **Partitioning Confusion**  
+   During the manual partitioning step, some options (like setting up a custom LVM or separate `/home`) were not intuitive for beginners and could easily lead to partitioning errors.
+
  
 Solutions
 Resolving Installation Issues
