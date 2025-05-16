@@ -35,14 +35,18 @@ CentOS Stream offers a unique opportunity to observe and interact with the devel
 •	To evaluate the advantages and disadvantages of using CentOS Stream Server compared to other Linux-based operating systems  
 •	To understand the concept of virtualization and how it is applied in modern operating systems using tools like VirtualBox  
 •	To gain insights into Linux standardization and how CentOS Stream aligns with enterprise and community-driven development models  
+
 ## Requirements
 **Hardware Requirements**  
+
 •	Processor: 2 GHz dual-core processor or better  
 •	RAM: Minimum 2 GB (4 GB or more recommended for optimal performance)  
 •	Storage: At least 20 GB of free disk space  
 •	Graphics: Any GPU capable of supporting standard virtual machine display  
 •	Host System: Windows 10/11, macOS, or Linux with sufficient resources to run virtualization software  
+
 **Software Requirements**  
+
 •	Virtualization Software: Oracle VM VirtualBox (version 6.1 or later) or VMware Workstation (version 17 or later)  
 •	Operating System ISO: CentOS Stream Server ISO (latest stable release from the official CentOS website)  
 •	Internet Connection: Required for downloading the ISO and installing updates  
@@ -50,8 +54,9 @@ CentOS Stream offers a unique opportunity to observe and interact with the devel
 
 ## Installation Steps
  
-✅ **Step 1:** Download Required Software and ISO Image  
+**✅Step 1: Download Required Software and ISO Image**    
 **Objective:**  
+
 Download and prepare all necessary files to start installing CentOS Stream Server on VirtualBox.  
 **Instructions:**  
 1.	Download and Install Oracle VM VirtualBox:  
@@ -64,7 +69,7 @@ Download and prepare all necessary files to start installing CentOS Stream Serve
 •	Scroll down and click on “Get CentOS Stream”.  
 •	Select "DVD ISO" under CentOS Stream 9 (or the latest version).  
 •	Choose a mirror and download the ISO file (usually named like CentOS-Stream-9-latest-x86_64-dvd1.iso).  
-✅ What You Should Have Now:  
+**✅ What You Should Have Now:**    
 •	VirtualBox installed on your Windows 11 PC.  
 •	CentOS Stream ISO downloaded to your computer.  
  
@@ -73,10 +78,12 @@ Download and prepare all necessary files to start installing CentOS Stream Serve
 
  ![image](https://github.com/user-attachments/assets/ac8202cf-a4af-44cd-84df-56a5a361d8ad)  
  
- ** ✅Step 2: Create a New Virtual Machine in VirtualBox ** 
+ **✅Step 2: Create a New Virtual Machine in VirtualBox**  
 **Objective:**  
+
 Set up a virtual environment to install CentOS Stream Server.  
-**Instructions:**    
+**Instructions:**   
+
 **1.	Open VirtualBox** on your Windows 11 PC.  
 **2.	Click on "New"** at the top-left corner.  
 **3.	In the Name and Operating System window:**  
@@ -113,8 +120,10 @@ o	Set size to at least 20 GB.
 
 **✅ Step 3: Mount the CentOS Stream ISO and Start the VM**  
 **Objective:**  
+
 Attach the CentOS Stream Server ISO file to the virtual machine and begin the installation process.  
 **Instructions:**  
+
 **1.	Select your new virtual machine** (e.g., CentOS Stream Server) in VirtualBox.  
 2.	Click **"Settings"** on the top toolbar.  
 3.	Go to the **"Storage"** tab in the left sidebar.  
@@ -132,8 +141,10 @@ o	On the right side, click the **CD icon** next to “Optical Drive”, then cho
 
 **✅ Step 4: Begin the OS Installation**  
 **Objective:**  
+
 Start the CentOS Stream installation from the boot menu and proceed to the graphical installer.  
 **Instructions:** 
+
 1.	After booting from the ISO, you will see the CentOS Stream boot menu.  
 2.	Use the arrow keys to highlight:  
 o	Install CentOS Stream 9 (or similar depending on the version)  
@@ -151,7 +162,7 @@ o	Click Continue
 **Objective:**  
 To set up key installation settings before starting the CentOS Stream installation.  
  
-**🔧 Instructions:**
+**🔧 Instructions:**  
 At the Installation Summary screen, you’ll see several options. You must configure the following:
  
 **1. Installation Destination**  
@@ -175,7 +186,7 @@ At the Installation Summary screen, you’ll see several options. You must confi
 **o	Check the box** “Make this user administrator”
 3.	Click **Done.**
  
-**📌 Optional (if shown):**
+**📌 Optional (if shown):**  
 **•	Software Selection:** Leave as default (Minimal Install) or select Server with GUI if you prefer a graphical interface.  
 **•	Time & Date:** Set your region or enable Network Time if needed.  
  
@@ -195,11 +206,13 @@ At the Installation Summary screen, you’ll see several options. You must confi
 
 ![image](https://github.com/user-attachments/assets/7f9e0753-f335-4b1d-9fe2-4c3fa2922449)
 
-**✅ Step 6: Complete Installation & Reboot**
+**✅ Step 6: Complete Installation & Reboot**  
 **Objective:**  
+
 Wait for the installation to complete and reboot into your new CentOS Stream Server system.  
  
 **🔧 Instructions:**
+
 1.	After clicking “Begin Installation”, CentOS will begin copying files and installing the system.  
 🕒 This may take a few minutes.  
 2.	While installation is in progress, you will see messages like:  
@@ -225,11 +238,13 @@ o	“Configuring user settings”
 
  ![image](https://github.com/user-attachments/assets/43315434-7c2f-476c-bb98-bd9559daf3fc)
 
-**✅ Step 7: Post-Installation Setup (System Update and Configuration)**
+**✅ Step 7: Post-Installation Setup (System Update and Configuration)**  
 **Objective:**  
+
 Update the system packages and perform basic configurations to ensure CentOS Stream Server runs smoothly.  
  
 **🔧 Instructions:**  
+
 **1. Log In**  
 •	At the login screen, enter your username and password (the one you created during installation).  
  
@@ -242,10 +257,10 @@ Update the system packages and perform basic configurations to ensure CentOS Str
 •	Enter the root password when prompted.  
  
 **4. Update the System**
-Run the following command to update all packages:
-dnf update -y
-•	This will fetch and install the latest updates.
-•	Wait until the update process completes.
+Run the following command to update all packages:  
+dnf update -y  
+•	This will fetch and install the latest updates.  
+•	Wait until the update process completes.  
  
 **5. (Optional but Recommended) Reboot After Update
 reboot**
@@ -279,6 +294,7 @@ reboot**
 
 ## Solutions  
 **Resolving Installation Issues**  
+
 **1.	Virtual Machine Display Resolution**  
 To fix the display issue, VirtualBox Guest Additions were installed after installing the necessary kernel packages. The following commands were run inside the CentOS VM:
 sudo dnf groupinstall "Development Tools"  
@@ -314,6 +330,7 @@ To avoid manual errors, the automatic partitioning option was selected during in
  
 ## Filesystem  
 **CentOS Stream Server Filesystem**  
+
 By default, CentOS Stream Server uses the ext4 (Fourth Extended Filesystem) as its primary filesystem during installation. It is selected for its balance between stability, performance, and compatibility. Ext4 supports large volumes and files, journaling, and backward compatibility with ext3/ext2.  
 **•	Default:** ext4  
 **•	Why ext4:** It is mature, well-supported, has good performance, and is reliable for server environments.  
