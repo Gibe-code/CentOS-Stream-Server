@@ -68,9 +68,41 @@ Download and prepare all necessary files to start installing CentOS Stream Serve
 •	VirtualBox installed on your Windows 11 PC.  
 •	CentOS Stream ISO downloaded to your computer.  
  
-![image](https://github.com/user-attachments/assets/d3767452-5178-46b7-ad54-7cfbcd490e8a)
+![image](https://github.com/user-attachments/assets/d3767452-5178-46b7-ad54-7cfbcd490e8a)  
 
+
+ ![image](https://github.com/user-attachments/assets/ac8202cf-a4af-44cd-84df-56a5a361d8ad)  
  
+##✅Step 2: Create a New Virtual Machine in VirtualBox
+**Objective:**
+Set up a virtual environment to install CentOS Stream Server.  
+**Instructions:**  
+**1.	Open VirtualBox** on your Windows 11 PC.
+**2.	Click on "New"** at the top-left corner.
+**3.	In the Name and Operating System window:**
+**o	Name:** CentOS Stream Server (or use your full name as instructed, e.g., John Doe CentOS Server)
+**o	Machine Folder:** Leave as default unless you want to change the storage location.
+**o	Type:** Linux
+**o	Version:** Red Hat (64-bit) (CentOS is derived from Red Hat)
+✅ Click **Next** after filling in the details.
+**4.	Memory Size:**
+o	Allocate at least 2048 MB (2 GB) of RAM (recommended: 4096 MB if your PC supports it).
+**✅ Click Next.**
+**5.	Hard Disk:**
+o	Select "Create a virtual hard disk now".
+**✅ Click Create.**
+**6.	Hard Disk File Type:**
+o	Choose VDI (VirtualBox Disk Image).
+**✅ Click Next.**
+**7.	Storage on Physical Hard Disk:**
+o	Select Dynamically allocated.
+**✅ Click Next.**
+**8.	File Location and Size:**
+o	Set size to at least 20 GB.
+**✅ Click Create.**
+ 
+**the virtual machine is now created!**
+
 
 
 
