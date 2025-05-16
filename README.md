@@ -311,7 +311,7 @@ To avoid manual errors, the automatic partitioning option was selected during in
    
    
  
-## Filesystem
+## Filesystem  
 **CentOS Stream Server Filesystem**  
 By default, CentOS Stream Server uses the ext4 (Fourth Extended Filesystem) as its primary filesystem during installation. It is selected for its balance between stability, performance, and compatibility. Ext4 supports large volumes and files, journaling, and backward compatibility with ext3/ext2.  
 **•	Default:** ext4  
@@ -369,7 +369,7 @@ o	Supported by Red Hat and a large open-source community with extensive guides, 
 **5.	Free and Open Source**  
 o	No licensing fees, making it ideal for education, testing, and production environments without the cost burden.
 
-**6.	SELinux and Security Features**
+**6.	SELinux and Security Features**  
 o	Comes with Security-Enhanced Linux (SELinux) by default, adding robust access control and security.
 
 **Disadvantages of CentOS Stream Server**
@@ -390,76 +390,73 @@ o	Manual configurations, SELinux, and package management via dnf can be challeng
 o	Installing tools like VirtualBox Guest Additions can require manual intervention and additional packages.
  
  
-## Conclusion
-Throughout this project, I have gained substantial insight into **CentOS Stream Server** and its pivotal role in the Red Hat Enterprise Linux (RHEL) ecosystem. CentOS Stream serves as a rolling-release distribution that sits just ahead of RHEL, making it a valuable platform for developers and administrators who want to preview and contribute to future RHEL versions.  
-The installation process in a virtual environment, specifically within VMware Workstation, was smooth and well-documented. Minor compatibility issues, such as screen resolution and network bridging, were resolved with straightforward configuration adjustments and the installation of VMware Tools.
-CentOS Stream's design emphasizes **stability and controlled innovation**, offering a balance between cutting-edge features and enterprise-grade reliability. This unique positioning makes it particularly appealing for system administrators and developers seeking a testbed for pre-RHEL changes.
-The use of **ext4** as the default filesystem underscores CentOS Stream’s commitment to reliability and maturity, providing excellent performance and compatibility across a wide range of hardware and software environments. The support for additional filesystems like XFS and Btrfs adds flexibility for various enterprise needs.
-CentOS Stream’s tight integration with tools like dnf, SELinux, and systemd, along with its support for container platforms such as Podman and Docker, reinforces its role as a modern server operating system. It is well-suited for development, testing, and even production use in certain cases, particularly when long-term foresight into RHEL is needed.  
-The implementation of system calls within CentOS Stream demonstrated its robust Linux foundation. The successful use of system-level programming, including manipulation of processes via system calls like setpgid, confirmed the system’s suitability for both user-level and low-level kernel interactions.
-In conclusion, **CentOS Stream Server** stands out as a strategic and practical choice for developers and administrators seeking to work closely with the evolution of enterprise Linux. It combines forward-looking development with a solid foundation, making it an excellent platform for both experimentation and structured learning in modern server environments.
+## Conclusion  
+Throughout this project, I have gained substantial insight into **CentOS Stream Server** and its pivotal role in the Red Hat Enterprise Linux (RHEL) ecosystem. CentOS Stream serves as a rolling-release distribution that sits just ahead of RHEL, making it a valuable platform for developers and administrators who want to preview and contribute to future RHEL versions. The installation process in a virtual environment, specifically within VMware Workstation, was smooth and well-documented. Minor compatibility issues, such as screen resolution and network bridging, were resolved with straightforward configuration adjustments and the installation of VMware Tools.
+CentOS Stream's design emphasizes **stability and controlled innovation**, offering a balance between cutting-edge features and enterprise-grade reliability. This unique positioning makes it particularly appealing for system administrators and developers seeking a testbed for pre-RHEL changes.The use of **ext4** as the default filesystem underscores CentOS Stream’s commitment to reliability and maturity, providing excellent performance and compatibility across a wide range of hardware and software environments. The support for additional filesystems like XFS and Btrfs adds flexibility for various enterprise needs.CentOS Stream’s tight integration with tools like dnf, SELinux, and systemd, along with its support for container platforms such as Podman and Docker, reinforces its role as a modern server operating system. It is well-suited for development, testing, and even production use in certain cases, particularly when long-term foresight into RHEL is needed. The implementation of system calls within CentOS Stream demonstrated its robust Linux foundation. The successful use of system-level programming, including manipulation of processes via system calls like setpgid, confirmed the system’s suitability for both user-level and low-level kernel interactions. In conclusion, **CentOS Stream Server** stands out as a strategic and practical choice for developers and administrators seeking to work closely with the evolution of enterprise Linux. It combines forward-looking development with a solid foundation, making it an excellent platform for both experimentation and structured learning in modern server environments.
  
  
-## Future Outlook and Recommendations
+## Future Outlook and Recommendations  
 **Future Outlook**  
-CentOS Stream is set to play an increasingly important role in the Linux ecosystem, particularly within enterprise and development environments. As Red Hat transitions away from traditional CentOS Linux to CentOS Stream, the distribution is positioned as the **upstream source for future RHEL releases**, providing a more transparent and collaborative development process.
-The continued evolution of CentOS Stream will likely bring more frequent updates, improved tooling, and broader hardware support. With its integration into CI/CD pipelines and containerized environments, CentOS Stream is expected to gain further adoption among DevOps teams and developers who need to anticipate changes in enterprise environments.
-In the future, tighter integration with cloud platforms and better support for edge computing and hybrid deployments may further expand CentOS Stream’s relevance. Its role as a **bridge between Fedora’s innovation and RHEL’s stability** ensures it will remain an important distribution for those involved in shaping the future of enterprise Linux.  
 
-**Recommendations**
+CentOS Stream is set to play an increasingly important role in the Linux ecosystem, particularly within enterprise and development environments. As Red Hat transitions away from traditional CentOS Linux to CentOS Stream, the distribution is positioned as the **upstream source for future RHEL releases**, providing a more transparent and collaborative development process.The continued evolution of CentOS Stream will likely bring more frequent updates, improved tooling, and broader hardware support. With its integration into CI/CD pipelines and containerized environments, CentOS Stream is expected to gain further adoption among DevOps teams and developers who need to anticipate changes in enterprise environments.In the future, tighter integration with cloud platforms and better support for edge computing and hybrid deployments may further expand CentOS Stream’s relevance. Its role as a **bridge between Fedora’s innovation and RHEL’s stability** ensures it will remain an important distribution for those involved in shaping the future of enterprise Linux.  
+
+**Recommendations**  
 **1.	For New Users:**   
 Invest time in understanding the lifecycle differences between CentOS Stream and traditional distributions. Regular updates and minor version changes are part of the model, so adaptability is essential.  
 
-**2.	For System Administrators:**
-Consider using CentOS Stream in development and staging environments to mirror the upcoming state of RHEL. This approach can help in anticipating compatibility issues and ensuring smoother transitions in production.
+**2.	For System Administrators:**  
+Consider using CentOS Stream in development and staging environments to mirror the upcoming state of RHEL. This approach can help in anticipating compatibility issues and ensuring smoother transitions in production.  
 
-**3.	For Educators and Students:**
+**3.	For Educators and Students:**  
 Leverage CentOS Stream for hands-on learning about enterprise Linux, system administration, and service configuration. Its upstream nature makes it ideal for teaching real-world skills aligned with RHEL systems.
 
-**4.	For Developers:**
+**4.	For Developers:**  
 Use CentOS Stream to test software against a rolling version of what will become RHEL. Contributing to CentOS Stream also provides an opportunity to influence enterprise Linux development directly.
 
-**5.	Tooling and Automation:**
+**5.	Tooling and Automation:**  
 Embrace automation tools like Ansible or Terraform with CentOS Stream to align with best practices in managing dynamic, scalable systems.
 
-**6.	Virtualization and Cloud Readiness:**
-As virtualization becomes more central to infrastructure management, CentOS Stream should be tested and integrated into virtualized and containerized deployments early in the development lifecycle.  
+**6.	Virtualization and Cloud Readiness:**  
+As virtualization becomes more central to infrastructure management, CentOS Stream should be tested and integrated into virtualized and containerized deployments early in the development lifecycle.   
 
 In summary, CentOS Stream Server offers a strategic and adaptable platform for multiple user groups. With careful planning and proactive maintenance, it can serve as a valuable foundation for development, learning, and production in a forward-looking Linux ecosystem.
  
  
 ## Virtualization in Modern Operating Systems   
-**What is Virtualization?** 
+**What is Virtualization?**  
 
-Virtualization is the process of creating a **virtual version of computing resources**, such as operating systems, servers, storage devices, or networks, by abstracting the hardware through software. In simpler terms, it allows multiple virtual machines (VMs) to run on a single physical system, each operating as if it were a separate, independent machine.
-Each virtual machine operates with its own **virtual CPU, memory, disk, and network interface**, all managed by a hypervisor, which serves as the intermediary between the host hardware and the guest systems.  
+Virtualization is the process of creating a **virtual version of computing resources**, such as operating systems, servers, storage devices, or networks, by abstracting the hardware through software. In simpler terms, it allows multiple virtual machines (VMs) to run on a single physical system, each operating as if it were a separate, independent machine. Each virtual machine operates with its own **virtual CPU, memory, disk, and network interface**, all managed by a hypervisor, which serves as the intermediary between the host hardware and the guest systems.  
  
 **Why Virtualization Matters?**  
+
 Virtualization plays a critical role in modern IT infrastructure for several reasons:  
-**1.	Resource Optimization:**
+
+**1.	Resource Optimization:**  
 It allows organizations to maximize the use of physical hardware by running multiple VMs on a single server, reducing waste and lowering costs.
 
-**2.	Isolation and Security:**
+**2.	Isolation and Security:**  
 Virtual machines are isolated from one another, which improves system security and stability. A failure or attack on one VM does not affect others.
 
-**3.	Scalability and Flexibility:**
+**3.	Scalability and Flexibility:**  
 Virtual environments can be quickly scaled up or down based on demand. New VMs can be provisioned in minutes without needing new physical machines.
 
-**4.	Testing and Development:**
+**4.	Testing and Development:**  
 Developers can use virtualization to test applications across multiple OS environments without needing separate physical systems.
 
-**5.	Disaster Recovery and Backup:**
+**5.	Disaster Recovery and Backup:**  
 Virtual machines can be easily backed up and restored. Snapshots allow system states to be saved and reverted if needed.
 
-**6.	Cloud Computing Foundation:**
+**6.	Cloud Computing Foundation:**  
 Virtualization is a key enabler of cloud platforms (e.g., AWS, Azure, GCP) that offer Infrastructure as a Service (IaaS).
  
-**How Virtualization Works?**
+**How Virtualization Works?**  
+
 Virtualization is made possible through a key component known as the **hypervisor**, which manages and allocates hardware resources to VMs. There are two main types of hypervisors:  
+
 **•	Type 1 (Bare-metal Hypervisor):**  
 Runs directly on the host hardware. Examples include VMware ESXi, Microsoft Hyper-V, and KVM. These offer high performance and are used in enterprise environments.
 
-**•	Type 2 (Hosted Hypervisor):**
+**•	Type 2 (Hosted Hypervisor):**  
 Runs on top of a host operating system. Examples include VMware Workstation and Oracle VM VirtualBox. These are typically used for personal or development environments.
 
 Here's how virtualization works step by step:  
@@ -471,10 +468,13 @@ Advanced features like **hardware-assisted virtualization** (Intel VT-x, AMD-V) 
  
  
 **Virtualization in CentOS Stream Server Context**  
+
 CentOS Stream Server plays a significant role in virtualization environments, particularly for developers, sysadmins, and enterprises working within or alongside the Red Hat ecosystem. Its rolling-release nature makes it a **forward-looking platform** ideal for testing, building, and managing virtualized systems that will align with future RHEL versions.
 
 **Virtualization Support in CentOS Stream**  
+
 CentOS Stream comes equipped with robust support for virtualization technologies out of the box, including:  
+
 **•	KVM (Kernel-based Virtual Machine)**  
 – A full virtualization solution built into the Linux kernel, allowing CentOS to act as both a host and a guest operating system.
 
@@ -491,6 +491,7 @@ CentOS Stream comes equipped with robust support for virtualization technologies
 – A web-based GUI that includes modules for managing virtual machines on CentOS Stream, making it more accessible for those less comfortable with command-line management.
 
 **Use Cases in CentOS Stream**  
+
 **1.	Development & Testing:**  
 Developers use CentOS Stream to build and test virtualized applications or services intended for future RHEL systems, ensuring compatibility and readiness.
 
@@ -504,6 +505,7 @@ CentOS Stream supports running VMs inside other VMs, which is useful for trainin
 While not virtualization in the traditional sense, CentOS Stream offers native tools like Podman and Buildah for lightweight, OS-level virtualization alternatives to full VMs.
 
 **Advantages of Using CentOS Stream for Virtualization**  
+
 **•	Stability with Innovation:** You get access to near-future RHEL updates in a stable form.  
 **•	Enterprise-grade Tooling:** Features like SELinux, systemd, and advanced networking (bridges, bonds, VLANs) are supported and production-ready.  
 **•	Community and Vendor Alignment:** Since CentOS Stream feeds into RHEL, it allows for contributions and testing that may directly impact the future of enterprise Linux.
