@@ -12,8 +12,8 @@
 [Filesystem](#filesystem)  
 [Advantages and Disadvantages](#advantages-and-disadvantages)  
 [Conclusion](#conclusion)  
-[Future Outlook and Recommendations](#future-outlook-and-Recommendations)
-[Virtualization](#virtualization)  
+[Future Outlook and Recommendations](#future-outlook-and-Recommendations)  
+[Virtualization in Modern Operating Systems](#Virtualization-in-Modern-Operating-Systems)  
 ## Introduction  
 **Background**  
 
@@ -407,58 +407,105 @@ The continued evolution of CentOS Stream will likely bring more frequent updates
 In the future, tighter integration with cloud platforms and better support for edge computing and hybrid deployments may further expand CentOS Stream’s relevance. Its role as a **bridge between Fedora’s innovation and RHEL’s stability** ensures it will remain an important distribution for those involved in shaping the future of enterprise Linux.  
 
 **Recommendations**
-1.	For New Users: Invest time in understanding the lifecycle differences between CentOS Stream and traditional distributions. Regular updates and minor version changes are part of the model, so adaptability is essential.
-2.	For System Administrators: Consider using CentOS Stream in development and staging environments to mirror the upcoming state of RHEL. This approach can help in anticipating compatibility issues and ensuring smoother transitions in production.
-3.	For Educators and Students: Leverage CentOS Stream for hands-on learning about enterprise Linux, system administration, and service configuration. Its upstream nature makes it ideal for teaching real-world skills aligned with RHEL systems.
-4.	For Developers: Use CentOS Stream to test software against a rolling version of what will become RHEL. Contributing to CentOS Stream also provides an opportunity to influence enterprise Linux development directly.
-5.	Tooling and Automation: Embrace automation tools like Ansible or Terraform with CentOS Stream to align with best practices in managing dynamic, scalable systems.
-6.	Virtualization and Cloud Readiness: As virtualization becomes more central to infrastructure management, CentOS Stream should be tested and integrated into virtualized and containerized deployments early in the development lifecycle.
+**1.	For New Users:**   
+Invest time in understanding the lifecycle differences between CentOS Stream and traditional distributions. Regular updates and minor version changes are part of the model, so adaptability is essential.  
+
+**2.	For System Administrators:**
+Consider using CentOS Stream in development and staging environments to mirror the upcoming state of RHEL. This approach can help in anticipating compatibility issues and ensuring smoother transitions in production.
+
+**3.	For Educators and Students:**
+Leverage CentOS Stream for hands-on learning about enterprise Linux, system administration, and service configuration. Its upstream nature makes it ideal for teaching real-world skills aligned with RHEL systems.
+
+**4.	For Developers:**
+Use CentOS Stream to test software against a rolling version of what will become RHEL. Contributing to CentOS Stream also provides an opportunity to influence enterprise Linux development directly.
+
+**5.	Tooling and Automation:**
+Embrace automation tools like Ansible or Terraform with CentOS Stream to align with best practices in managing dynamic, scalable systems.
+
+**6.	Virtualization and Cloud Readiness:**
+As virtualization becomes more central to infrastructure management, CentOS Stream should be tested and integrated into virtualized and containerized deployments early in the development lifecycle.  
+
 In summary, CentOS Stream Server offers a strategic and adaptable platform for multiple user groups. With careful planning and proactive maintenance, it can serve as a valuable foundation for development, learning, and production in a forward-looking Linux ecosystem.
  
  
-Virtualization in Modern Operating Systems
-What is Virtualization?
-Virtualization is the process of creating a virtual version of computing resources, such as operating systems, servers, storage devices, or networks, by abstracting the hardware through software. In simpler terms, it allows multiple virtual machines (VMs) to run on a single physical system, each operating as if it were a separate, independent machine.
-Each virtual machine operates with its own virtual CPU, memory, disk, and network interface, all managed by a hypervisor, which serves as the intermediary between the host hardware and the guest systems.
+## Virtualization in Modern Operating Systems   
+**What is Virtualization?** 
+
+Virtualization is the process of creating a **virtual version of computing resources**, such as operating systems, servers, storage devices, or networks, by abstracting the hardware through software. In simpler terms, it allows multiple virtual machines (VMs) to run on a single physical system, each operating as if it were a separate, independent machine.
+Each virtual machine operates with its own **virtual CPU, memory, disk, and network interface**, all managed by a hypervisor, which serves as the intermediary between the host hardware and the guest systems.  
  
-Why Virtualization Matters?
-Virtualization plays a critical role in modern IT infrastructure for several reasons:
-1.	Resource Optimization: It allows organizations to maximize the use of physical hardware by running multiple VMs on a single server, reducing waste and lowering costs.
-2.	Isolation and Security: Virtual machines are isolated from one another, which improves system security and stability. A failure or attack on one VM does not affect others.
-3.	Scalability and Flexibility: Virtual environments can be quickly scaled up or down based on demand. New VMs can be provisioned in minutes without needing new physical machines.
-4.	Testing and Development: Developers can use virtualization to test applications across multiple OS environments without needing separate physical systems.
-5.	Disaster Recovery and Backup: Virtual machines can be easily backed up and restored. Snapshots allow system states to be saved and reverted if needed.
-6.	Cloud Computing Foundation: Virtualization is a key enabler of cloud platforms (e.g., AWS, Azure, GCP) that offer Infrastructure as a Service (IaaS).
+**Why Virtualization Matters?**  
+Virtualization plays a critical role in modern IT infrastructure for several reasons:  
+**1.	Resource Optimization:**
+It allows organizations to maximize the use of physical hardware by running multiple VMs on a single server, reducing waste and lowering costs.
+
+**2.	Isolation and Security:**
+Virtual machines are isolated from one another, which improves system security and stability. A failure or attack on one VM does not affect others.
+
+**3.	Scalability and Flexibility:**
+Virtual environments can be quickly scaled up or down based on demand. New VMs can be provisioned in minutes without needing new physical machines.
+
+**4.	Testing and Development:**
+Developers can use virtualization to test applications across multiple OS environments without needing separate physical systems.
+
+**5.	Disaster Recovery and Backup:**
+Virtual machines can be easily backed up and restored. Snapshots allow system states to be saved and reverted if needed.
+
+**6.	Cloud Computing Foundation:**
+Virtualization is a key enabler of cloud platforms (e.g., AWS, Azure, GCP) that offer Infrastructure as a Service (IaaS).
  
-How Virtualization Works?
-Virtualization is made possible through a key component known as the hypervisor, which manages and allocates hardware resources to VMs. There are two main types of hypervisors:
-•	Type 1 (Bare-metal Hypervisor): Runs directly on the host hardware. Examples include VMware ESXi, Microsoft Hyper-V, and KVM. These offer high performance and are used in enterprise environments.
-•	Type 2 (Hosted Hypervisor): Runs on top of a host operating system. Examples include VMware Workstation and Oracle VM VirtualBox. These are typically used for personal or development environments.
-Here's how virtualization works step by step:
-1.	The hypervisor creates a virtual layer over the hardware.
-2.	This layer simulates virtual hardware components (CPU, memory, storage, etc.).
-3.	Guest operating systems (like CentOS, Ubuntu, or Windows) are installed on these virtual machines as if they were running on physical machines.
-4.	The hypervisor manages scheduling, I/O requests, and memory allocation across the VMs.
-Advanced features like hardware-assisted virtualization (Intel VT-x, AMD-V) enhance performance by allowing the guest OS to run closer to native speeds.
+**How Virtualization Works?**
+Virtualization is made possible through a key component known as the **hypervisor**, which manages and allocates hardware resources to VMs. There are two main types of hypervisors:  
+**•	Type 1 (Bare-metal Hypervisor):**  
+Runs directly on the host hardware. Examples include VMware ESXi, Microsoft Hyper-V, and KVM. These offer high performance and are used in enterprise environments.
+
+**•	Type 2 (Hosted Hypervisor):**
+Runs on top of a host operating system. Examples include VMware Workstation and Oracle VM VirtualBox. These are typically used for personal or development environments.
+
+Here's how virtualization works step by step:  
+1.	The hypervisor creates a virtual layer over the hardware.  
+2.	This layer simulates virtual hardware components (CPU, memory, storage, etc.).  
+3.	Guest operating systems (like CentOS, Ubuntu, or Windows) are installed on these virtual machines as if they were running on physical machines.  
+4.	The hypervisor manages scheduling, I/O requests, and memory allocation across the VMs.  
+Advanced features like **hardware-assisted virtualization** (Intel VT-x, AMD-V) enhance performance by allowing the guest OS to run closer to native speeds.  
  
  
-Virtualization in CentOS Stream Server Context
-CentOS Stream Server plays a significant role in virtualization environments, particularly for developers, sysadmins, and enterprises working within or alongside the Red Hat ecosystem. Its rolling-release nature makes it a forward-looking platform ideal for testing, building, and managing virtualized systems that will align with future RHEL versions.
-Virtualization Support in CentOS Stream
-CentOS Stream comes equipped with robust support for virtualization technologies out of the box, including:
-•	KVM (Kernel-based Virtual Machine) – A full virtualization solution built into the Linux kernel, allowing CentOS to act as both a host and a guest operating system.
-•	QEMU – Works with KVM to provide hardware emulation and device passthrough.
-•	libvirt – A powerful toolkit and API used to manage KVM/QEMU virtual machines through command-line tools (virsh) or graphical interfaces like virt-manager.
-•	VirtIO Drivers – Provides high-performance I/O for virtual disks and network interfaces.
-•	Cockpit – A web-based GUI that includes modules for managing virtual machines on CentOS Stream, making it more accessible for those less comfortable with command-line management.
-Use Cases in CentOS Stream
-1.	Development & Testing: Developers use CentOS Stream to build and test virtualized applications or services intended for future RHEL systems, ensuring compatibility and readiness.
-2.	Private Clouds: CentOS Stream is often used as the base OS in virtualization clusters running tools like oVirt, OpenStack, or Proxmox due to its upstream alignment with RHEL.
-3.	Nested Virtualization: CentOS Stream supports running VMs inside other VMs, which is useful for training, simulation, or advanced CI/CD pipelines.
-4.	Containerization Support: While not virtualization in the traditional sense, CentOS Stream offers native tools like Podman and Buildah for lightweight, OS-level virtualization alternatives to full VMs.
-Advantages of Using CentOS Stream for Virtualization
-•	Stability with Innovation: You get access to near-future RHEL updates in a stable form.
-•	Enterprise-grade Tooling: Features like SELinux, systemd, and advanced networking (bridges, bonds, VLANs) are supported and production-ready.
-•	Community and Vendor Alignment: Since CentOS Stream feeds into RHEL, it allows for contributions and testing that may directly impact the future of enterprise Linux.
+**Virtualization in CentOS Stream Server Context**  
+CentOS Stream Server plays a significant role in virtualization environments, particularly for developers, sysadmins, and enterprises working within or alongside the Red Hat ecosystem. Its rolling-release nature makes it a **forward-looking platform** ideal for testing, building, and managing virtualized systems that will align with future RHEL versions.
+
+**Virtualization Support in CentOS Stream**  
+CentOS Stream comes equipped with robust support for virtualization technologies out of the box, including:  
+**•	KVM (Kernel-based Virtual Machine)**  
+– A full virtualization solution built into the Linux kernel, allowing CentOS to act as both a host and a guest operating system.
+
+**•	QEMU**  
+– Works with KVM to provide hardware emulation and device passthrough.
+
+**•	libvirt**  
+– A powerful toolkit and API used to manage KVM/QEMU virtual machines through command-line tools (virsh) or graphical interfaces like virt-manager.
+
+**•	VirtIO Drivers**  
+– Provides high-performance I/O for virtual disks and network interfaces.
+
+**•	Cockpit**  
+– A web-based GUI that includes modules for managing virtual machines on CentOS Stream, making it more accessible for those less comfortable with command-line management.
+
+**Use Cases in CentOS Stream**  
+**1.	Development & Testing:**  
+Developers use CentOS Stream to build and test virtualized applications or services intended for future RHEL systems, ensuring compatibility and readiness.
+
+**2.	Private Clouds:**  
+CentOS Stream is often used as the base OS in virtualization clusters running tools like oVirt, OpenStack, or Proxmox due to its upstream alignment with RHEL.
+
+**3.	Nested Virtualization:**  
+CentOS Stream supports running VMs inside other VMs, which is useful for training, simulation, or advanced CI/CD pipelines.
+
+**4.	Containerization Support:**  
+While not virtualization in the traditional sense, CentOS Stream offers native tools like Podman and Buildah for lightweight, OS-level virtualization alternatives to full VMs.
+
+**Advantages of Using CentOS Stream for Virtualization**  
+**•	Stability with Innovation:** You get access to near-future RHEL updates in a stable form.  
+**•	Enterprise-grade Tooling:** Features like SELinux, systemd, and advanced networking (bridges, bonds, VLANs) are supported and production-ready.  
+**•	Community and Vendor Alignment:** Since CentOS Stream feeds into RHEL, it allows for contributions and testing that may directly impact the future of enterprise Linux.
 
 # Systemcall Implementation  
