@@ -251,8 +251,9 @@ dnf update -y
 reboot**
  
 ✅ After reboot, your system will be up-to-date and ready for further use (like implementing system calls, managing services, etc.).  
- ![image](https://github.com/user-attachments/assets/2c62f9a6-e34c-4f4b-8d55-5a4996877342)
-![Uploading image.png…]()
+ ![image](https://github.com/user-attachments/assets/0bc1f41c-2a4c-48e5-8f06-4295716b9def)
+
+ ![image](https://github.com/user-attachments/assets/d5aad8e8-db32-48db-b1f0-cc942154bcbc)
 
  
  
