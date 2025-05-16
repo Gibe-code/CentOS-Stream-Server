@@ -48,7 +48,27 @@ CentOS Stream offers a unique opportunity to observe and interact with the devel
 •	Internet Connection: Required for downloading the ISO and installing updates  
 •	Optional Tools: Screenshot tool and image editing software (e.g., Snipping Tool, Paint, or GIMP) for documentation purposes  
 
+## Installation Steps
  
+✅ **Step 1:** Download Required Software and ISO Image  
+**Objective:**  
+Download and prepare all necessary files to start installing CentOS Stream Server on VirtualBox.  
+**Instructions:**  
+1.	Download and Install Oracle VM VirtualBox:  
+•	Go to the official VirtualBox website: https://www.virtualbox.org/  
+•	Click on "Downloads".  
+•	Choose "Windows hosts".  
+•	Once downloaded, run the installer and install VirtualBox with default settings.  
+2.	Download CentOS Stream ISO:  
+•	Visit: https://www.centos.org/centos-stream/  
+•	Scroll down and click on “Get CentOS Stream”.  
+•	Select "DVD ISO" under CentOS Stream 9 (or the latest version).  
+•	Choose a mirror and download the ISO file (usually named like CentOS-Stream-9-latest-x86_64-dvd1.iso).  
+✅ What You Should Have Now:  
+•	VirtualBox installed on your Windows 11 PC.  
+•	CentOS Stream ISO downloaded to your computer.  
+ 
+
  
 
 
