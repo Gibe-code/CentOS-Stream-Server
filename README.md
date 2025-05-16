@@ -14,7 +14,7 @@
 [Future Outlook](#future-outlook)  
 [Virtualization](#virtualization)  
 ## Introduction  
-** Background **  
+**Background**  
 
 CentOS Stream Server is a Linux-based operating system developed as a continuously delivered distribution that sits between Fedora and Red Hat Enterprise Linux (RHEL) in the RHEL development process. It is maintained by the CentOS Project and backed by Red Hat.
 CentOS Stream was introduced in 2019 as a rolling-release version of CentOS that tracks just ahead of a current RHEL release. This makes it particularly suitable for developers and system administrators who want to see what is coming in future versions of RHEL and contribute feedback upstream.
