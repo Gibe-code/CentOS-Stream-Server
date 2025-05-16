@@ -287,53 +287,61 @@ Then, the Guest Additions ISO was mounted via the VirtualBox menu, and the scrip
 sudo ./VBoxLinuxAdditions.run  
 
 After a reboot, dynamic resolution adjustment and full-screen mode worked correctly.  
+
 **2.	Guest Additions Installation Failure**  
 As above, the issue was resolved by ensuring all development tools and kernel headers were installed before running the Guest Additions script. It's important to match the installed kernel version with the kernel-devel package.  
+
 **3.	Network Configuration Issues**  
 The network issue was resolved by switching the VirtualBox adapter setting from NAT to Bridged Adapter, which allowed the VM to directly access the host network.  
  Additionally, DNS settings were verified using:  
 cat /etc/resolv.conf  
 
 and manually updated if necessary.  
+
 **4.	Software Package Download Errors**  
 These were resolved by switching to more reliable mirrors. Running the following command helped refresh repositories:  
 sudo dnf clean all  
 sudo dnf makecache  
 
 Also, temporarily switching to a different mirror list in the /etc/yum.repos.d/ directory helped bypass connectivity issues.  
+
 **5.	Partitioning Confusion**  
 To avoid manual errors, the automatic partitioning option was selected during installation. For users wanting custom partitions, official CentOS documentation was referenced for guidance on using LVM and creating /home, /var, and /boot partitions  
 
    
    
  
-Filesystem Support
-CentOS Stream Server Filesystem
+## Filesystem Support
+**CentOS Stream Server Filesystem**
 By default, CentOS Stream Server uses the ext4 (Fourth Extended Filesystem) as its primary filesystem during installation. It is selected for its balance between stability, performance, and compatibility. Ext4 supports large volumes and files, journaling, and backward compatibility with ext3/ext2.
-•	Default: ext4
-•	Why ext4: It is mature, well-supported, has good performance, and is reliable for server environments.
-Other Supported Filesystems
+**•	Default:** ext4
+**•	Why ext4:** It is mature, well-supported, has good performance, and is reliable for server environments.
+**Other Supported Filesystems**
 CentOS Stream also supports several other filesystems that can be configured manually or during advanced installations:
-•	XFS:
+**•	XFS:**
 o	Default for many RHEL/CentOS setups on enterprise-grade systems.
 o	High performance and excellent for handling large files and parallel I/O.
 o	Chosen in many server environments.
-•	Btrfs (via external repo or manual install):
+**•	Btrfs** (via external repo or manual install):
 o	Modern filesystem with snapshot and subvolume support, but not officially supported by RHEL-based production environments.
 o	Suitable for experimentation.
-•	vfat/FAT32:
+**•	vfat/FAT32:**
 o	Used for EFI boot partitions.
 o	Provides cross-platform compatibility.
-•	NTFS (via ntfs-3g):
+
+**•	NTFS (via ntfs-3g):**
 o	Read/write support available through additional packages.
 o	Used mostly for interoperability with Windows-formatted drives.
-•	exFAT:
+
+**•	exFAT:**
 o	Supported via external packages.
 o	Useful for USB drives, but not recommended for system partitions.
-•	ZFS:
+
+**•	ZFS:**
 o	Can be installed manually but not officially supported by CentOS/RHEL.
 o	Advanced features like data integrity verification and built-in RAID.
-Conclusion on Filesystem Usage
+
+**Conclusion on Filesystem Usage**
 For most CentOS Stream Server installations, XFS is typically the default and preferred option in enterprise environments due to its scalability and performance, although ext4 remains a solid choice for general use, especially in virtualized environments.
  
  
