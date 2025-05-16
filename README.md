@@ -68,6 +68,7 @@ Download and prepare all necessary files to start installing CentOS Stream Serve
 •	VirtualBox installed on your Windows 11 PC.  
 •	CentOS Stream ISO downloaded to your computer.  
  
+![image](https://github.com/user-attachments/assets/d3767452-5178-46b7-ad54-7cfbcd490e8a)
 
  
 
