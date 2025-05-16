@@ -276,58 +276,10 @@ reboot**
    During the manual partitioning step, some options (like setting up a custom LVM or separate `/home`) were not intuitive for beginners and could easily lead to partitioning errors.
 
  
-Here's your updated **Solutions** section, perfectly formatted for a `README.md` file. This version includes proper bolding, spacing, and Markdown code blocks for clarity and readability on GitHub:
 
-````markdown
-## 🛠 Solutions
-
-### ✅ Resolving Installation Issues
-
-1. **Virtual Machine Display Resolution**  
-   To fix the display issue, VirtualBox Guest Additions were installed after installing the necessary kernel packages. The following commands were run inside the CentOS VM:
-
-   ```bash
-   sudo dnf groupinstall "Development Tools"
-   sudo dnf install kernel-headers kernel-devel elfutils-libelf-devel
-````
-
-Then, the Guest Additions ISO was mounted via the VirtualBox menu, and the script `VBoxLinuxAdditions.run` was executed:
-
-```bash
-sudo ./VBoxLinuxAdditions.run
-```
-
-After a reboot, dynamic resolution adjustment and full-screen mode worked correctly.
-
-2. **Guest Additions Installation Failure**
-   As mentioned above, the issue was resolved by ensuring all development tools and kernel headers were installed before running the Guest Additions script. It's important to match the installed kernel version with the `kernel-devel` package.
-
-3. **Network Configuration Issues**
-   The network issue was resolved by switching the VirtualBox adapter setting from **NAT** to **Bridged Adapter**, which allowed the VM to directly access the host network. Additionally, DNS settings were verified using:
-
-   ```bash
-   cat /etc/resolv.conf
-   ```
-
-   and manually updated if necessary.
-
-4. **Software Package Download Errors**
-   These were resolved by switching to more reliable mirrors. The following commands were used to refresh the repositories:
-
-   ```bash
-   sudo dnf clean all
-   sudo dnf makecache
-   ```
-
-   Also, temporarily switching to a different mirror list in the `/etc/yum.repos.d/` directory helped bypass connectivity issues.
-
-5. **Partitioning Confusion**
-   To avoid manual errors, the **automatic partitioning** option was selected during installation. For users wanting custom partitions, official CentOS documentation was referenced for guidance on using **LVM** and creating `/home`, `/var`, and `/boot` partitions.
-
-```
-
-Let me know when you’re ready to process the next section!
-```
+   
+   
+   
 
  
 Filesystem Support
