@@ -73,7 +73,7 @@ Download and prepare all necessary files to start installing CentOS Stream Serve
 
  ![image](https://github.com/user-attachments/assets/ac8202cf-a4af-44cd-84df-56a5a361d8ad)  
  
-## ✅Step 2: Create a New Virtual Machine in VirtualBox  
+ ** ✅Step 2: Create a New Virtual Machine in VirtualBox ** 
 **Objective:**  
 Set up a virtual environment to install CentOS Stream Server.  
 **Instructions:**    
@@ -111,7 +111,7 @@ o	Set size to at least 20 GB.
 
 ![image](https://github.com/user-attachments/assets/fd23fb76-085d-42c5-9348-6ac267f5780b)
 
-## ✅ Step 3: Mount the CentOS Stream ISO and Start the VM  
+**✅ Step 3: Mount the CentOS Stream ISO and Start the VM**  
 **Objective:**  
 Attach the CentOS Stream Server ISO file to the virtual machine and begin the installation process.  
 **Instructions:**  
@@ -258,7 +258,7 @@ reboot**
  
 ## Issues
 
-### 🔧 Problems Faced During Installation
+**🔧 Problems Faced During Installation**
 
 1. **Virtual Machine Display Resolution**  
    After installation, the CentOS Stream Server VM was stuck at a low resolution (1024x768) and did not resize automatically with the VirtualBox window. Full-screen mode also did not scale properly.
