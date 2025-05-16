@@ -100,7 +100,7 @@ o	Select Dynamically allocated.
 **8.	File Location and Size:**  
 o	Set size to at least 20 GB.  
 **✅ Click Create.**  
-
+ 
  
 **the virtual machine is now created**
 
