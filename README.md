@@ -21,13 +21,12 @@
 
 # System Calls Implementation 
 
-[Understanding System Calls](#Understanding-System-Calls)
-[The lstat() System Call](#The-lstat()-System-Call)
-[My Implementation Process](#My-Implementation-Process) 
-[Program Output](#Program-Output) 
-[Observations and Learning](#Observations-and-Learning)
-[Conclusion](#Conclusion)
-![image](https://github.com/user-attachments/assets/547d9224-937b-4d39-a9be-30b4801953c2)
+[Understanding System Calls](#Understanding-System-Calls)  
+[The lstat() System Call](#The-lstat()-System-Call)  
+[My Implementation Process](#My-Implementation-Process)   
+[Program Output](#Program-Output)   
+[Observations and Learning](#Observations-and-Learning)  
+[Conclusion](#Conclusion)  
 
 
 ## Introduction  
