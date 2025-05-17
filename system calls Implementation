@@ -1,7 +1,9 @@
 
-## System Calls Implementation
+#System Calls Implementation
 
-[Understanding System Calls](#Understanding-System-Calls
+[Understanding System Calls](#Understanding-System-Calls)
+
+
 ## Understanding System Calls 
 
 System calls are a critical mechanism that bridges user-space applications and the kernel in Unix-like operating systems such as CentOS Stream Server. They provide controlled access to low-level functionalities like file management, process control, and hardware communication. Using system calls ensures that applications can perform necessary tasks without compromising system security or stability.
