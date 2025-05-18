@@ -1,9 +1,9 @@
 
 
-- **Operating System**: CentOS Stream Server  
 - **Name**: Gebeyaw Derib  
 - **Student ID**: BDU1601541  
-- **Section**: B
+- **Section**: B  
+- **Operating System**: CentOS Stream Server  
 
 ---
 
