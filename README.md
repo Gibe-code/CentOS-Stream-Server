@@ -1,6 +1,6 @@
 
 
-- **Name**: Gebeyaw Derib  
+- **Name**: Nathan Derib  
 - **Student ID**: BDU1601541  
 - **Section**: B  
 - **Operating System**: CentOS Stream Server  
